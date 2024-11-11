@@ -1,0 +1,48 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: crimson;
+}
+
+span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    text-shadow: 1px 3px 20px  rgba(3, 3, 3, 0.54);
+}
+
+span.active{
+    animation: jump 2s ease-in-out ;
+}
+
+@keyframes jump{
+    0% {
+        transform: translate(0,0);
+    }
+    
+    25%{
+        transform: scale(2) translate(0,-80px)
+    }
+
+    80%{
+        transform: scale(1.25) translate(0,5px)
+    }
+    90%{
+        transform: scale(1.25) translate(0, 0px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
