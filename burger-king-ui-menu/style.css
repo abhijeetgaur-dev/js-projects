@@ -14,6 +14,7 @@ body{
     padding: 0px;
     margin: 0px;
     background-color: #F6F0EB;
+    min-width: 320px;
 }
 
 .header{
@@ -53,7 +54,7 @@ main{
 }
 
 .hero-section{
-    padding-top: 80px;
+    margin-top: 80px;
 }
 .hero-section p{
     text-align: center;
@@ -70,7 +71,7 @@ main{
 }
 
 .section{
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .section .img-container{
@@ -127,4 +128,77 @@ footer p{
         padding: 16px 24px;
     }
     
+}
+
+.close-icon{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icon{
+    width: 24px;
+    background-color: #fff;
+    padding: 8px 32px 24px 36px;
+    border-radius: 0 0 0 100%;
+}
+
+@media(max-width : 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: hsla(0, 0%, 100%, 0.75);
+        margin: 24px;
+        width: 200px;
+        padding: 24px 16px;
+        display: none;
+        
+    }
+    nav a{
+        font-size: 12px;
+        font-weight: 700;
+        line-height: medium;
+
+    }
+
+    nav a+a{
+        margin: 0;
+        padding-top: 16px;
+    }
+    .header{
+        background: transparent;
+        position: sticky;
+        top: 0;
+        background-color: hsla(27, 38%, 94%, 0.75);
+        backdrop-filter: blur(8px);
+        padding: 20px 24px 12px 24px;
+
+    }
+    
+    .hero-section{
+        margin-top: 32px;
+    }
+    
+    .logo{
+        width: 30px;
+    }
+
+    .section{
+        margin-top: 16px;
+    }
+    .section h2{
+        font-size: 20px;
+    }
+    .hero-section p{
+        font-size: 10px;
+    }
+    .close-icon{
+        display: block;
+    }
+
 }
