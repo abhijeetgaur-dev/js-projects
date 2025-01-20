@@ -100,6 +100,7 @@ main{
     text-decoration-line: underline;
 }
 
+
 footer p{
     color: #858585;
     text-align: center;
@@ -107,6 +108,25 @@ footer p{
     font-size: 16px;
     padding-bottom: 30px;
 }
+
+.close-icon{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icon{
+    width: 24px;
+    background-color: #fff;
+    padding: 4px 32px 8px 24px;
+    border-radius: 0 0 0 100%;
+    cursor: pointer;
+    display: none;
+}
+
+
 @media(max-width: 1260px){
     nav a{
         font-size: 16px;
@@ -130,20 +150,7 @@ footer p{
     
 }
 
-.close-icon{
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    cursor: pointer;
-    display: none;
-}
 
-.hamburger-icon{
-    width: 24px;
-    background-color: #fff;
-    padding: 8px 32px 24px 36px;
-    border-radius: 0 0 0 100%;
-}
 
 @media(max-width : 768px){
     nav{
@@ -157,12 +164,12 @@ footer p{
         width: 200px;
         padding: 24px 16px;
         display: none;
-        
     }
     nav a{
         font-size: 12px;
         font-weight: 700;
         line-height: medium;
+
 
     }
 
@@ -197,8 +204,13 @@ footer p{
     .hero-section p{
         font-size: 10px;
     }
-    .close-icon{
+    .close-icon, .hamburger-icon{
         display: block;
     }
-
+    .menu-open nav{
+        display: flex;
+    }
+    .menu-open .hamburger-icon{
+        display: none;
+    }
 }
