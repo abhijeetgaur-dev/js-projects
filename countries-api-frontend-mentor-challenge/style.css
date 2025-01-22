@@ -26,3 +26,40 @@ body{
 
    
 }
+main{
+    padding: 30px 50px;
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container{
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container img{
+    width: 100%;
+}
+    
+.country-content{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-bottom: 16px;
+}
+
+.country-content h3{
+    padding : 0px;
+    margin-block: 10px;
+}
