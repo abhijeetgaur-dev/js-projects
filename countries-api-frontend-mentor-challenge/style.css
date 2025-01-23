@@ -37,20 +37,37 @@ main{
 }
 
 .hero-section{
+    max-width: 1200px;
+    margin-top: 64px;
+    margin-inline: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container{
-    max-width: 300px;
+
+.country-card{
+    display: inline-block;
+    width: 300px;
     border-radius: 5px;
+    overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
 }
 
-.container img{
+.country-card img{
     width: 100%;
 }
+
+.country-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
     
 .country-content{
     display: flex;
