@@ -13,12 +13,34 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <h2 class="title">Where in the world?</h2>
+            <h2 class="title"><a href="index.html">Where in the world?</a></h2>
         <p><i class="fa-regular fa-moon"></i>&nbsp;&nbsp; Dark Mode</p>
         </div>
     </header>
     <div class="country-body">
-            
+        <span class="back-button" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i> &nbsp;&nbsp;Back</span>
+        <div class="each-country-content">
+            <div class="flag-image-container">
+                <img src="" alt="" class="country-flag">
+            </div>
+            <div class="country-details">
+                <h2 class="country-title"></h2>
+                <div class="country-content">
+                    <span><b>Native Name: </b><span class="country-nativeName"></span></span>
+                    <span><b>Population: </b><span class="country-population"></span></span>
+                    <span><b>Region: </b> <span class="country-region"></span></span>
+                    <span><b>Sub-Region: </b> <span class="country-subregion"></span></span>
+                    <span><b>Capital: </b><span class="country-capital"></span></span>
+                    <span><b>Top Level Domain: </b><span class="country-tld"></span></span>
+                    <span><b>Currencies: </b><span class="country-currencies"></span></span>
+                    <span><b>Languages: </b><span class="country-languages"></span></span>
+                </div>
+                <div class="border-countries">
+                    <b>Border Countries:</b>
+                    <div class="border-countries-content">
+                    </div>
+                </div>
+        </div>
     </div>
 
 </body>

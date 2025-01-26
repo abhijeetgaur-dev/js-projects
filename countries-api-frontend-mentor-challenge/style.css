@@ -17,6 +17,11 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding-inline: 24px;
 }
+
+.header a{
+    text-decoration: none;
+    color: inherit;
+}
 .header-content{
     display: flex;
     align-items: center;
@@ -34,6 +39,24 @@ main{
     justify-content: space-between;
 }
 
+.search-box-container{
+    max-width: 400px;
+    padding: 16px 48px 16px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.search-box-container i{
+    margin-right: 8px;
+    color: rgb(171, 171, 171); 
+}
+.search-box-container input{
+   padding-left: 8px;
+   border: none;
+   outline: none;
+   color: rgb(142, 142, 142);
+   font-family: inherit;
+}
 .hero-section{
     max-width: 1200px;
     margin-top: 64px;
@@ -44,7 +67,6 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 
 .country-card{
     display: inline-block;
@@ -80,3 +102,4 @@ main{
     padding : 0px;
     margin-block: 10px;
 }
+
